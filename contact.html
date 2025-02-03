@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Juliano Marques">
+        <meta name="description" content="Projeto para estudar CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste CSS</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="img/BubbleTeaIcon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body class=" bg lato-regular">
+        <header class="relative text-20px">
+            <nav class="bg-nav flex justify-center px-12 py-18 relative z-10 mx-auto">
+                <article class="flex justify-center align-center">
+                    <img src="img/Logo.png" alt="logo" title="Logo Cha Boba Fox" width="192" height="89" class="mr-30">
+                    <a href="index.html" class="text-dark-purple py-8 px-16 no-underline lato-bold">Início</a>
+                    <a href="#aboutUs" class="text-dark-purple py-8 px-16 no-underline lato-bold">Conheça a Loja</a>
+                    <a href="#ourMenu" class="text-dark-purple py-8 px-16 no-underline lato-bold">Nosso Menu</a>
+                    <a href="hours.html" class="text-dark-purple py-8 px-16 no-underline lato-bold">Horário de Atendimento</a>
+                </article>
+                <!-- <section class="flex justify-center align-center">
+                    <a href="" class="text-dark-purple block py-8 px-16 mr-10 no-underline lato-bold">Login</a>
+                    <button class="bg-brand-teal text-white border-none rounded-full py-12 px-28 lato-bold uppercase text-sm">Registre-se</button>
+                </section> -->
+            </nav>
+
+            <section class="object-cover flex relative">
+                <video src="/vid/Background.mp4" 
+                class="w-full h-full object-cover" 
+                title="Banner Bubble Tea" 
+                autoplay="autoplay" 
+                playsinline muted disablePictureInPicture oncontextmenu="return false;"
+                loop="loop"
+                style="min-height: 1080px; ">
+                </video>
+
+                <h1 style="max-width: 1400px; top: 400px; margin-left: 300px;" class="text-dark-purple absolute z-10 text-40px sm:text-90px">
+                    Nos mande <br>
+                    <span class="text-green-tea" style="margin-left: 300px;">uma mensagem!</span>
+                </h1>
+            </section>
+        </header>
+
+        <hr>
+
+        <main class="relative text-30px">
+            <article id="formContactUs">
+                <h2 class="text-center py-18 text-dark-purple">Formulário de Contato</h2>
+
+                <form class="mx-auto text-30px" style="color: rgb(125, 88, 77)">
+                    <fieldset style="border: none;">
+                        <p style="padding: 5px">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="name" id="name" placeholder="Juliano" autocomplete="on" required>
+                        </p>
+                        <p style="padding: 5px">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="lojachafox@gmail.com" autocomplete="on" required>
+                        </p>
+                        <p style="padding: 5px">
+                            <label for="message">Escreva sua mensagem:</label>
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+                        </p>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+            </article>
+
+            <br>
+
+            <img src="img/BubbleTea.jpg" alt="Bubble Tea Street" title="Chá com leite" width="600" height="314" style="padding: 50px 0" class="mx-auto block">
+
+            <article id="ourLocation">
+                <h2 class="text-center py-18 text-dark-purple">Onde Estamos?</h2>
+
+                <address class="text-center py-18">
+                    Rua da Casa de Chá, 123, Centro<br>
+                    Curitiba - Paraná, 81000-000<br>
+                    <br>
+                    Tel: <a href="tel:+41981818181">41 9 8181-8181</a>
+                </address>
+
+            </article>
+
+            <hr style="margin-top: 20px;">
+        </main>
+
+        <footer class="relative text-20px" style="text-align: end;">
+            <p>
+                Copyright &copy; Loja de Chá Boba do Fox 🦊
+            </p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Juliano Marques">
+        <meta name="description" content="Projeto para estudar CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste CSS</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="img/BubbleTeaIcon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body class=" bg lato-regular">
+        <header class="relative text-20px">
+            <nav class="bg-nav flex justify-center px-12 py-18 relative z-10 mx-auto">
+                <section class="flex justify-center align-center">
+                    <img src="img/Logo.png" alt="logo" title="Logo Cha Boba Fox" width="192" height="89" class="mr-30">
+                    <a href="index.html" class="text-dark-purple py-8 px-16 no-underline lato-bold">Início</a>
+                    <a href="#aboutUs" class="text-dark-purple py-8 px-16 no-underline lato-bold">Conheça a Loja</a>
+                    <a href="#ourMenu" class="text-dark-purple py-8 px-16 no-underline lato-bold">Nosso Menu</a>
+                    <a href="contact.html" class="text-dark-purple py-8 px-16 no-underline lato-bold">Fale Conosco</a>
+                </section>
+                <!-- <section class="flex justify-center align-center">
+                    <a href="" class="text-dark-purple block py-8 px-16 mr-10 no-underline lato-bold">Login</a>
+                    <button class="bg-brand-teal text-white border-none rounded-full py-12 px-28 lato-bold uppercase text-sm">Registre-se</button>
+                </section> -->
+            </nav>
+
+            <section class="object-cover flex relative">
+                <video src="/vid/Background.mp4" 
+                class="w-full h-full object-cover" 
+                title="Banner Bubble Tea" 
+                autoplay="autoplay" 
+                playsinline muted disablePictureInPicture oncontextmenu="return false;"
+                loop="loop"
+                style="min-height: 1080px; ">
+                </video>
+
+                <h1 style="max-width: 1400px; top: 400px; margin-left: 300px;" class="text-dark-purple absolute z-10 text-40px sm:text-90px">
+                    Horário de Atendimento <br>
+                    <span class="text-green-tea" style="margin-left: 300px;">Loja de Chá Boba do Fox</span>
+                </h1>
+            </section>
+        </header>
+
+        <hr>
+
+        <main class="relative text-30px">       
+            <h2 class="text-center py-18 text-dark-purple">Estamos abertos durante a semana toda!</h2>
+
+            <img src="img/BubbleTeaGroup.webp" alt="Bubble Tea Group" title="Opções dos nossos chás" width="320" height="220" style="padding-top: 20px;" class="mx-auto block">
+
+            <dl class="mx-auto text-center padding-text-center text-30px">
+                <dt>Segunda a Quinta</dt>
+                <dd>8:00~21:00</dd>
+                <dt>Sexta a Domingo</dt>
+                <dd>10:00~23:00</dd>
+            </dl>
+
+            <hr style="margin-top: 20px;">
+        </main>
+
+        <footer class="relative text-20px" style="text-align: end;">
+            <p>
+                Copyright &copy; Loja de Chá Boba do Fox 🦊
+            </p>
+        </footer>
+    </body>
+</html>

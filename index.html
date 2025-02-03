@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Juliano Marques">
+        <meta name="description" content="Projeto para estudar CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste CSS</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="img/BubbleTeaIcon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body class=" bg lato-regular">
+        <header class="relative text-20px">
+            <nav class="bg-nav flex justify-center px-12 py-18 relative z-10 mx-auto">
+                <article class="flex justify-center align-center">
+                    <img src="img/Logo.png" alt="logo" title="Logo Cha Boba Fox" width="192" height="89" class="mr-30">
+                    <a href="#aboutUs" class="text-dark-purple py-8 px-16 no-underline lato-bold">Conheça a Loja</a>
+                    <a href="#ourMenu" class="text-dark-purple py-8 px-16 no-underline lato-bold">Nosso Menu</a>
+                    <a href="hours.html" class="text-dark-purple py-8 px-16 no-underline lato-bold">Horário de Atendimento</a>
+                    <a href="contact.html" class="text-dark-purple py-8 px-16 no-underline lato-bold">Fale Conosco</a>
+                </article>
+                <!-- <section class="flex justify-center align-center">
+                    <a href="" class="text-dark-purple block py-8 px-16 mr-10 no-underline lato-bold">Login</a>
+                    <button class="bg-brand-teal text-white border-none rounded-full py-12 px-28 lato-bold uppercase text-sm">Registre-se</button>
+                </section> -->
+            </nav>
+
+            <section class="object-cover flex relative">
+                <video src="/vid/Background.mp4" 
+                class="w-full h-full object-cover" 
+                title="Banner Bubble Tea" 
+                autoplay="autoplay" 
+                playsinline muted disablePictureInPicture oncontextmenu="return false;"
+                loop="loop"
+                style="min-height: 1080px; ">
+                </video>
+
+                <h1 style="max-width: 1400px; top: 400px; margin-left: 300px;" class="text-dark-purple absolute z-10 text-40px sm:text-90px">
+                    Bem-vindo a <br>
+                    <span class="text-green-tea" style="margin-left: 300px;">Loja de Chá Boba do Fox</span>
+                </h1>
+            </section>
+        </header>
+
+        <hr>
+
+        <main class="relative text-30px">
+            <article id="aboutUs">
+                <h2 class="text-center py-18 text-dark-purple">
+                    Conheça a Loja
+                </h2>
+                <p class="mx-auto text-center padding-text-center" style="font-size: 27px">A <abbr title="Loja de Chá Boba do Fox" style="text-decoration: none;">LCBF</abbr> foi fundada em <time datetime="2025">2025</time> com o propósito de fornecer o melhor do chá boba para seus clientes. 
+                    Com um menu variado, nossa loja vem conquistando o coração de cada vez mais pessoas conforme cresce. 🧋🧋🧋
+                </p>
+
+                <img src="img/BubbleTeaImage.webp" alt="Bubble Tea" title="Nosso chá tradicional" width="499" height="374" style="padding-top: 20px;" class="mx-auto block">
+
+                <h3 class="text-center py-18 text-dark-purple">
+                    História do Chá Boba
+                </h3>
+                
+                <aside class="mx-auto padding-text-center" style="font-size: 27px">
+                    <details>
+                        <summary>Você sabe de onde se originou o Chá Boba?</summary>
+                        <p>&emsp;O Chá Boba surgiu em Taiwan, tendo duas versões que contam sobre sua criação: a primeira diz que a Sra. 
+                            Lin Hsi Hui, em Taichung, Taiwan, na década de <time datetime="1980">1980</time>, extraiu bolinhas de tapioca de uma sobremesa taiwanesa 
+                            e as adicionou ao seu chá gelado. Já a segunda diz que Tu Tsong He, um jovem empreendedor e artista, notou 
+                            bolas de tapioca em um mercado local e decidiu adicioná-las ao chá verde que bebia à noite. </p>
+                    </details>
+                </aside>
+            </article>
+
+            <hr style="margin-top: 20px;">
+
+            <article id="ourMenu">
+                <h2 class="text-center py-18 text-dark-purple">
+                    Nosso Menu
+                </h2>
+                
+                <table class="mx-auto text-30px text-brown">
+                    <caption style="background-color: #FADADD; margin-top: 30px;" class="caption-without-bottom">Nossos Chás</caption>
+                    <thead>
+                        <tr style="background-color: #FADADD;">
+                            <th scope="col">Chás</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3" style="background-color: #FADADD;">Tradicionais</th>
+                            <td>1</td>
+                            <td>R$7.50</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>R$14.00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>R$20.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="3" style="background-color: #FADADD;">Com café</th>
+                            <td>1</td>
+                            <td>R$8.50</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>R$16.00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>R$24.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Bolhas Extras R$3.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <hr style="margin-top: 20px;">
+            </article>
+        </main>
+
+        <footer class="relative text-20px" style="text-align: end;">
+            <p>
+                Copyright &copy; Loja de Chá Boba do Fox 🦊
+            </p>
+        </footer>
+    </body>
+</html>
